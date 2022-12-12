@@ -1,7 +1,7 @@
 {
     "VCAP_SERVICES": {
         "xsuaa": [
-            {git remote add origin 
+            {
                 "name": "dummyXsuaa",
                 "instance_name": "dummyXsuaa",
                 "label": "xsuaa",
