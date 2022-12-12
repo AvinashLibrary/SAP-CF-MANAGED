@@ -1,0 +1,67 @@
+{
+    "VCAP_SERVICES": {
+        "xsuaa": [
+            {git remote add origin 
+                "name": "dummyXsuaa",
+                "instance_name": "dummyXsuaa",
+                "label": "xsuaa",
+                "tags": [
+                    "xsuaa",
+                    "endpoint:https://api.cf.us10-001.hana.ondemand.com",
+                    "org:ca502f84trial",
+                    "space:dev"
+                ],
+                "plan": "application",
+                "credentials": {
+                    "apiurl": "https://api.authentication.us10.hana.ondemand.com",
+                    "clientid": "sb-na-031e08e6-c8da-4708-b6e6-f331f6a04c66!t123346",
+                    "clientsecret": "rEoHtPA8GFXuNNgglv+KSy11+P4=",
+                    "credential-type": "instance-secret",
+                    "identityzone": "ca502f84trial",
+                    "identityzoneid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                    "sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+                    "service_key_name": "key",
+                    "subaccountid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                    "tenantid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.us10.hana.ondemand.com",
+                    "url": "https://ca502f84trial.authentication.us10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqMFhYVuABXnrKUDIl67f\n9jy10ZTDDsBhoH3PZPfDs6yCtRSZwMzX8xGJasPCmLSK2wlK7cER1+uw+j3GKkmU\ngREPhPnRXStteGrqeK5WWLPRRuDYAK+voOULNFEmRWMUKAioGc+MDW0Vxoek8PRz\nw+lsYZNUrPyGzf9M9zFrKdXibsYvUv2LZRsrWBY3CLRZ3c1uMiwKuJmqtg+vEtCt\nN6ar0btukAFBsAdGlugfO0xjBaDY4weVJpP19blEDnYDCzIwu3VpTwD4hO9aDNgC\n5xFtqHYNr3/wYL/VutX2ZZE2ziX/QF5mVarco6NFksG1/ORp+F+SP6Uy18sWby+n\nawIDAQAB\n-----END PUBLIC KEY-----",
+                    "xsappname": "na-031e08e6-c8da-4708-b6e6-f331f6a04c66!t123346",
+                    "zoneid": "802f30c8-f978-47cd-ab99-c208115014bb"
+                }
+            }
+        ],
+        "destination": [
+            {
+                "name": "dummyService",
+                "instance_name": "dummyService",
+                "label": "destination",
+                "tags": [
+                    "destination",
+                    "conn",
+                    "connsvc",
+                    "endpoint:https://api.cf.us10-001.hana.ondemand.com",
+                    "org:ca502f84trial",
+                    "space:dev"
+                ],
+                "plan": "lite",
+                "credentials": {
+                    "clientid": "sb-clonee8c352ebb54d4997bfdac7f9b1e99c03!b123346|destination-xsappname!b62",
+                    "clientsecret": "4b100efa-90c3-453e-b5fc-fcf1453f972f$YmZ6r5io2FuPemaFQcnL5hXlneuJ2kUNHYEwi4Tl0Ig=",
+                    "credential-type": "binding-secret",
+                    "identityzone": "ca502f84trial",
+                    "instanceid": "e8c352eb-b54d-4997-bfda-c7f9b1e99c03",
+                    "service_key_name": "key",
+                    "tenantid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.us10.hana.ondemand.com",
+                    "uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+                    "url": "https://ca502f84trial.authentication.us10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqMFhYVuABXnrKUDIl67f\n9jy10ZTDDsBhoH3PZPfDs6yCtRSZwMzX8xGJasPCmLSK2wlK7cER1+uw+j3GKkmU\ngREPhPnRXStteGrqeK5WWLPRRuDYAK+voOULNFEmRWMUKAioGc+MDW0Vxoek8PRz\nw+lsYZNUrPyGzf9M9zFrKdXibsYvUv2LZRsrWBY3CLRZ3c1uMiwKuJmqtg+vEtCt\nN6ar0btukAFBsAdGlugfO0xjBaDY4weVJpP19blEDnYDCzIwu3VpTwD4hO9aDNgC\n5xFtqHYNr3/wYL/VutX2ZZE2ziX/QF5mVarco6NFksG1/ORp+F+SP6Uy18sWby+n\nawIDAQAB\n-----END PUBLIC KEY-----",
+                    "xsappname": "clonee8c352ebb54d4997bfdac7f9b1e99c03!b123346|destination-xsappname!b62"
+                }
+            }
+        ]
+    }
+}
