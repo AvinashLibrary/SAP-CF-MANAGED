@@ -6,18 +6,17 @@ modules:
 - name: node-hello-world-backend
   type: nodejs
   path: backend
-  # provides:
-  #   - name: Node_backend
-  #     public: true
-  #     properties:
-  #       url: https://${appname}.cfapps.us10-001.hana.ondemand.com
+  provides:
+    - name: Node_backend
+      properties:
+        url: "${default-uri}"
   requires:
     - name: applicatioui-uaa
   parameters:
       buildpack: nodejs_buildpack
       memory: 128M
       disk-quota: 256M
-      # host: ${appname}
+      host: ${appnamebackend}
 - name: applicatioui-destination-content
   type: com.sap.application.content
   requires:
@@ -76,6 +75,8 @@ modules:
 resources:
 - name: applicatioui-destination-service
   type: org.cloudfoundry.managed-service
+  requires:
+     - name: Node_backend
   parameters:
     config:
       HTML5Runtime_enabled: true
@@ -104,7 +105,7 @@ resources:
             Name: Node_backend
             ProxyType: Internet
             Type: HTTP
-            URL: https://ca502f84trial-dev-node-hello-world-backend.cfapps.us10-001.hana.ondemand.com
+            URL: https://~{Node_backend/url}
 
           existing_destinations_policy: update
       version: 1.0.0
@@ -127,4 +128,4 @@ resources:
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true
-  appname: application-unique
+  appnamebackend: application-backend
