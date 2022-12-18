@@ -20,8 +20,10 @@ server:
             # destination: Northwind
             proxyTimeout: 5000000
             timeout: 500000
-            changeOrigin: true
-            url: https://ca502f84trial.authentication.us10.hana.ondemand.com
+            # changeOrigin: true
+            url: https://services.odata.org
+          - path: /node
+            url: https://ca502f84trial-dev-node-hello-world-backend.cfapps.us10-001.hana.ondemand.com
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:

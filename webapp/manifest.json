@@ -24,6 +24,15 @@
                     "localUri": "localService/metadata.xml",
                     "odataVersion": "2.0"
                 }
+            },
+            "mainService2": {
+                "uri": "/node/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "2.0"
+                }
             }
         },
         "crossNavigation": {
@@ -86,6 +95,11 @@
             },
             "dummy": {
                 "dataSource": "mainService",
+                "preload": true,
+                "settings": {}
+            },
+            "dummy2": {
+                "dataSource": "mainService2",
                 "preload": true,
                 "settings": {}
             }

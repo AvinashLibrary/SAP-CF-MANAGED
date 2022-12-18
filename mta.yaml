@@ -3,6 +3,21 @@ ID: applicatioui
 description: A Fiori application.
 version: 0.0.1
 modules:
+- name: node-hello-world-backend
+  type: nodejs
+  path: backend
+  # provides:
+  #   - name: Node_backend
+  #     public: true
+  #     properties:
+  #       url: https://${appname}.cfapps.us10-001.hana.ondemand.com
+  requires:
+    - name: applicatioui-uaa
+  parameters:
+      buildpack: nodejs_buildpack
+      memory: 128M
+      disk-quota: 256M
+      # host: ${appname}
 - name: applicatioui-destination-content
   type: com.sap.application.content
   requires:
@@ -17,6 +32,7 @@ modules:
     parameters:
       service-key:
         name: applicatioui-uaa-key
+         
   parameters:
     content:
       instance:
@@ -80,6 +96,16 @@ resources:
             URL: https://services.odata.org
             WebIDEEnabled: true
             WebIDEUsage: true
+          - Authentication: NoAuthentication
+            Description: Node based backend
+            # HTML5.PreserveHostHeader: true
+            HTML5.DynamicDestination: true
+            HTML5.ForwardAuthToken: true
+            Name: Node_backend
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ca502f84trial-dev-node-hello-world-backend.cfapps.us10-001.hana.ondemand.com
+
           existing_destinations_policy: update
       version: 1.0.0
     service: destination
@@ -101,3 +127,4 @@ resources:
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true
+  appname: application-unique

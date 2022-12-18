@@ -32,7 +32,8 @@ server:
         backend:
          - path: /v2
            url: https://services.odata.org
-          #  destination: dummyService
+         - path: /getToDo
+           url: https://ca502f84trial-dev-node-hello-world-backend.cfapps.us10-001.hana.ondemand.com
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:

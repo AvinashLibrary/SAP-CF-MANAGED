@@ -1,0 +1,11 @@
+_schema-version: "3.2"
+ID: backend_node
+version: 0.0.1
+modules:
+  - name: node-hello-world-backend
+    type: nodejs
+    path: .
+    parameters:
+      buildpack: nodejs_buildpack
+      memory: 128M
+      disk-quota: 256M
