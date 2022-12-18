@@ -1,6 +1,6 @@
 _schema-version: "3.2"
 ID: applicatioui
-description: A Fiori application.
+description: Managed Approuter Based Application
 version: 0.0.1
 modules:
 - name: node-hello-world-backend
