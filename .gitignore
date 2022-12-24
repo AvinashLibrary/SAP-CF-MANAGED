@@ -10,3 +10,5 @@ archive.zip
 .*_mta_build_tmp
 # auto generated wildcard
 webapp/.env
+# auto generated wildcard
+backend/.env

@@ -1,13 +1,14 @@
-<mvc:View controllerName="applicatioui.controller.App"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+<mvc:View controllerName="applicatioui.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-        <Button text="Get Node Data" id="_IDGenButton1" press=".onLoadNodeData"></Button>
-        <List noDataText="Test"
-         id="_IDGenList1" items="{dummy>/Customers}">
-        <StandardListItem id="_IDGenStandardListItem1" title="{dummy>CompanyName}" description="{dummy>CustomerID}" />
-        </List>
+            <HBox id="_IDGenHBox1">
+                <Button text="Get Node Data" id="_IDGenButton1" press=".onLoadNodeData" />
+                <Button text="Get Feature Data" id="_IDFeatureButton" press=".onLoadFeatureData" />
+            </HBox>
+
+            <List noDataText="Test" id="_IDGenList1" items="{dummy>/Customers}">
+                <StandardListItem id="_IDGenStandardListItem1" title="{dummy>CompanyName}" description="{dummy>CustomerID}" />
+            </List>
         </content>
     </Page>
 </mvc:View>

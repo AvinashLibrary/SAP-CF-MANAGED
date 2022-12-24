@@ -5,12 +5,6 @@
   "authorities": [
     "$XSAPPNAME.read"
   ],
-  "oauth2-configuration": {
-    "redirect-uris": [
-      "https://ca502f84trial-dev-simplefiorilauncher-approuter.cfapps.us10-001.hana.ondemand.com/**",
-      "https://*.cfapps.us10-001.hana.ondemand.com/**"
-    ]
-  },
   "scopes": [
     {
       "name": "$XSAPPNAME.read",

@@ -2,10 +2,29 @@ _schema-version: "3.2"
 ID: backend_node
 version: 0.0.1
 modules:
-  - name: node-hello-world-backend
-    type: nodejs
-    path: .
-    parameters:
+- name: node-hello-world-backend
+  type: nodejs
+  path: /
+  provides:
+    - name: Node_backend
+      properties:
+        url: "${default-uri}"
+  requires:
+    - name: applicatioui-uaa
+    
+  parameters:
       buildpack: nodejs_buildpack
       memory: 128M
       disk-quota: 256M
+      host: ${appnamebackend}
+resources:
+  - name: applicatioui-uaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      path: ./xs-security.json
+      service: xsuaa
+      service-name: applicatioui-xsuaa-srv
+      service-plan: application
+       
+parameters:
+  appnamebackend: application-backend
