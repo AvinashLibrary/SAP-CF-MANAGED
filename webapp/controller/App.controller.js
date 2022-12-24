@@ -12,16 +12,32 @@ sap.ui.define([
 
         return Controller.extend("applicatioui.controller.App", {
             onInit: function () {
-
+                    this.ajaxServiceAppender = this.getOwnerComponent().getModel('dummy').getMetadataUrl().substring(2,35);
             },
             onLoadNodeData: function () {
                 let reqSettings = {
-                    "url": "node/getToDo",
+                    "url": this.ajaxServiceAppender + "/node/getToDo",
                     "method": "GET",
                 }
                 jquery.ajax(reqSettings)
                     .done(function (response) {
                         MessageBox.success("Rest Api Loaded");
+
+                    })
+                    .fail(function (response) {
+                        MessageBox.error(response.responseText);
+                       
+                    });
+
+            },
+            onLoadFeatureData: function () {
+                let reqSettings = {
+                    "url": this.ajaxServiceAppender + "/node/loadFeatureFlag",
+                    "method": "GET",
+                }
+                jquery.ajax(reqSettings)
+                    .done(function (response) {
+                        MessageBox.success(JSON.stringify(response));
 
                     })
                     .fail(function (response) {

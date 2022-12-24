@@ -12,6 +12,7 @@ modules:
         url: "${default-uri}"
   requires:
     - name: applicatioui-uaa
+    - name: applicatioui-feature-flag
   parameters:
       buildpack: nodejs_buildpack
       memory: 128M
@@ -125,6 +126,13 @@ resources:
     service: html5-apps-repo
     service-name: applicatioui-html5-srv
     service-plan: app-host
+- name: applicatioui-feature-flag
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: feature-flags
+    service-name: applicatioui-feature-flag-srv
+    service-plan: lite
+    path: ./featureflag.json
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true

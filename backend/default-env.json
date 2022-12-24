@@ -1,0 +1,77 @@
+{
+    "VCAP_SERVICES": {
+        "feature-flags": [
+            {
+                "name": "applicatioui-feature-flag-srv",
+                "instance_name": "applicatioui-feature-flag-srv",
+                "label": "feature-flags",
+                "tags": [
+                    "feature-flags",
+                    "endpoint:https://api.cf.us10-001.hana.ondemand.com",
+                    "org:ca502f84trial",
+                    "space:dev"
+                ],
+                "plan": "lite",
+                "credentials": {
+                    "password": "aa_8gRU2UX/xOgaIUjtsJk+5bSwQkk=",
+                    "service_key_name": "key",
+                    "uri": "https://feature-flags.cfapps.us10.hana.ondemand.com",
+                    "username": "sbss_mhrqpds40thes3kdwgz8z9ragtbjjg3aacmmk4i06kco+f8txck9t/nojjvluctqybu=",
+                    "x509": {
+                        "apiurl": "https://api.authentication.us10.hana.ondemand.com",
+                        "certificate": "-----BEGIN CERTIFICATE-----\nMIIFlzCCA3+gAwIBAgIUQAIAAAGFP3N7eAAAAYVEApdPAAAwDQYJKoZIhvcNAQEL\nBQAwejELMAkGA1UEBhMCREUxEDAOBgNVBAcMB2NmLXVzMTAxDzANBgNVBAoMBlNB\nUCBTRTEYMBYGA1UECwwPU0FQIEJUUCBDbGllbnRzMS4wLAYDVQQDDCVTQVAgUEtJ\nIENlcnRpZmljYXRlIFNlcnZpY2UgQ2xpZW50IENBMB4XDTIyMTIyNDExMDEzOFoX\nDTIzMDEyMzEyMDEzOFowgbMxCzAJBgNVBAYTAkRFMQ8wDQYDVQQKEwZTQVAgU0Ux\nIzAhBgNVBAsTGlNBUCBDbG91ZCBQbGF0Zm9ybSBDbGllbnRzMS0wKwYDVQQLEyRk\nNjQ4MjQ5ZC02YjMxLTQxOTAtYjZjYy04MDAzNGQwMjA4MmExEDAOBgNVBAcTB3Nh\ncC11YWExLTArBgNVBAMTJDY3M2UyMjYzLTk0YzgtNDNkZS04MDhiLWNkODQ2ZmRh\nYmM4ZjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL2uvqScith10f7a\n0FDc0U9+rF+tW782eY95Oqdxn1W6Lv2dJhxICMe2ZEBpbYXXZkEbVNvdqCGWnuq3\njMuA/0+vagK+/dpmdQSh/vRER6h4Vwais9++StQBaVxoedjxH2PvVb/Z2txivUAy\nBsUwFymV3d5JYrNMUEO9TjS9uXWhMC+O0LKzLEt+x3ecsjV4D/8x9PE7rheDRbAu\n4sPucXF2RIm2qmFsn7/ENlkJW32KD5eufB54sLZeOOSiJzvdP+Kxv0seH91AhoWz\nAOJpmyugTu+hSQdONXiItYyDGRkbeiJqgxx+vC+XGvMJyKA+zis4OKpeN70PW5i5\nZP1h/KUCAwEAAaOB2jCB1zAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIFoDATBgNV\nHSUEDDAKBggrBgEFBQcDAjAdBgNVHQ4EFgQUQ/AoSFKHpHfvmKJJ4l550hY55ckw\nHwYDVR0jBBgwFoAUMvYzhm4HsBQcnlKHx6nOxXVncaUwZQYDVR0fBF4wXDBaoFig\nVoZUaHR0cHM6Ly9jZXJ0aWZpY2F0ZS1zZXJ2aWNlLWNybHMuY2YudXMxMC5oYW5h\nLm9uZGVtYW5kLmNvbS8xNjcxNzY3MDg5XzE2NzcyMTM4ODkuY3JsMA0GCSqGSIb3\nDQEBCwUAA4ICAQA8mqXU1ANuFBelXi69HoDlpnJc40f1MH25HTDDKjg/6sBXlu+a\ncytUfietRKh25rDy/xmm7kg+QQBJrPlDBbil2WbpTLhL0mhy5FpHileW8c59WGIB\n7yJ08uRYClREaAVNsKJdKB3anIEJydzXOdAwm/ylC8p7mRZj0wC1MVOkwVFUkk2P\nhmRLkfGyGDzDDKpYdapguUIIjcAezYRxbrrz2BZiueK3jKkFPiFs0iwddNMhdp6B\nnSYKjWvV9Og8Vd/Hmb5tbRzzw8fjjGwB9mgJ9Y31oIi6CPv7JC2UzxV4sYajzB6+\nSEwabObdg3vVGvLHDGDGG2Z/0vc05l7Kifk0kHP7WXOCGffvaPqbdBWrV6K6rdCx\nSaN+iMHBUkPguBceA3UartAtjrDy6gJ1rAJVVxPQNAr3BEJN3llxsS+lR0cVG5oI\nuxwdQxeT+rWLTavmo1f7qjvDckV6np4J2vO2e5Ra9/6BLYZGxvWHQS8HpvHXVpXh\nhV/TjMfzFPoR2MXxg2IdYAtO0DFlU7Mqny6OvDV3hnmpdb/+zQNrUXOv2ql5wRpd\nRxGjXA4yMWr8l3Jvv1AcwPanKiiMfEv+4XwEMsmlBZs7SXhrhCACca3UuZu9w7A1\nboStkI9ir4/6DA6hGG4ko+C/HNjMfAWL3isZRgUudSyLginDJvnP6m7Ubg==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\n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\nGOoWjX485LbUKA==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIFZjCCA06gAwIBAgIQGHcPvmUGa79M6pM42bGFYjANBgkqhkiG9w0BAQsFADBN\nMQswCQYDVQQGEwJERTERMA8GA1UEBwwIV2FsbGRvcmYxDzANBgNVBAoMBlNBUCBT\nRTEaMBgGA1UEAwwRU0FQIENsb3VkIFJvb3QgQ0EwHhcNMTkwMjEzMTExOTM2WhcN\nMzkwMjEzMTEyNjMyWjBNMQswCQYDVQQGEwJERTERMA8GA1UEBwwIV2FsbGRvcmYx\nDzANBgNVBAoMBlNBUCBTRTEaMBgGA1UEAwwRU0FQIENsb3VkIFJvb3QgQ0EwggIi\nMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQChbHLXJoe/zFag6fB3IcN3d3HT\nY14nSkEZIuUzYs7B96GFxQi0T/2s971JFiLfB4KaCG+UcG3dLXf1H/wewq8ahArh\nFTsu4UR71ePUQiYlk/G68EFSy2zWYAJliXJS5k0DFMIWHD1lbSjCF3gPVJSUKf+v\nHmWD5e9vcuiPBlSCaEnSeimYRhg0ITmi3RJ4Wu7H0Xp7tDd5z4HUKuyi9XRinfvG\nkPALiBaX01QRC51cixmo0rhVe7qsNh7WDnLNBZeA0kkxNhLKDl8J6fQHKDdDEzmZ\nKhK5KxL5p5YIZWZ8eEdNRoYRMXR0PxmHvRanzRvSVlXSbfqxaKlORfJJ1ah1bRNt\no0ngAQchTghsrRuf3Qh/2Kn29IuBy4bjKR9CdNLxGrClvX/q26rUUlz6A3lbXbwJ\nEHSRnendRfEiia+xfZD+NG2oZW0IdTXSqkCbnBnign+uxGH5ECjuLEtvtUx6i9Ae\nxAvK2FqIuud+AchqiZBKzmQAhUjKUoACzNP2Bx2zgJOeB0BqGvf6aldG0n2hYxJF\n8Xssc8TBlwvAqtiubP/UxJJPs+IHqU+zjm7KdP6dM2sbE+J9O3n8DzOP0SDyEmWU\nUCwnmoPOQlq1z6fH9ghcp9bDdbh6adXM8I+SUYUcfvupOzBU7rWHxDCXld/24tpI\nFA7FRzHwKXqMSjwtBQIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/\nBAUwAwEB/zAdBgNVHQ4EFgQUHLxmKw7KjUufjZNxqQ/KZ0ZpEyIwDQYJKoZIhvcN\nAQELBQADggIBABdSKQsh3EfVoqplSIx6X43y2Pp+kHZLtEsRWMzgO5LhYy2/Fvel\neRBw/XEiB5iKuEGhxHz/Gqe0gZixw3SsHB1Q464EbGT4tPQ2UiMhiiDho9hVe6tX\nqX1FhrhycAD1xHIxMxQP/buX9s9arFZauZrpw/Jj4tGp7aEj4hypWpO9tzjdBthy\n5vXSviU8L2HyiQpVND/Rp+dNJmVYTiFLuULRY28QbikgFO2xp9s4RNkDBnbDeTrT\nCKWcVsmlZLPJJQZm0n2p8CvoeAsKzIULT9YSbEEBwmeqRlmbUaoT/rUGoobSFcrP\njrBg66y5hA2w7S3tDH0GjMpRu16b2u0hYQocUDuMlyhrkhsO+Qtqkz1ubwHCJ8PA\nRJw6zYl9VeBtgI5F69AEJdkAgYfvPw5DJipgVuQDSv7ezi6ZcI75939ENGjSyLVy\n4SuP99G7DuItG008T8AYFUHAM2h/yskVyvoZ8+gZx54TC9aY9gPIKyX++4bHv5BC\nqbEdU46N05R+AIBW2KvWozQkjhSQCbzcp6DHXLoZINI6y0WOImzXrvLUSIm4CBaj\n6MTXInIkmitdURnmpxTxLva5Kbng/u20u5ylIQKqpcD8HWX97lLVbmbnPkbpKxo+\nLvHPhNDM3rMsLu06agF4JTbO8ANYtWQTx0PVrZKJu+8fcIaUp7MVBIVZ\n-----END CERTIFICATE-----\n",
+                        "certificate-pinning": true,
+                        "certurl": "https://ca502f84trial.authentication.cert.us10.hana.ondemand.com",
+                        "clientid": "sb-feature-flags-binding-10ffa47f-eef8-46d1-a71e-b0ecdb9a09a8!b123346|feature-flags!b1765",
+                        "clientx509enabled": false,
+                        "credential-type": "x509",
+                        "identityzone": "ca502f84trial",
+                        "identityzoneid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                        "key": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAva6+pJyK2HXR/trQUNzRT36sX61bvzZ5j3k6p3GfVbou/Z0m\nHEgIx7ZkQGlthddmQRtU292oIZae6reMy4D/T69qAr792mZ1BKH+9ERHqHhXBqKz\n375K1AFpXGh52PEfY+9Vv9na3GK9QDIGxTAXKZXd3klis0xQQ71ONL25daEwL47Q\nsrMsS37Hd5yyNXgP/zH08TuuF4NFsC7iw+5xcXZEibaqYWyfv8Q2WQlbfYoPl658\nHniwtl445KInO90/4rG/Sx4f3UCGhbMA4mmbK6BO76FJB041eIi1jIMZGRt6ImqD\nHH68L5ca8wnIoD7OKzg4ql43vQ9bmLlk/WH8pQIDAQABAoIBAALs1vPNljaQWpSw\n5dWEEkDvldOZO3j6FhXTAMc5nANubkXATqjQ/jxWNmWSj/soaeNHJfUzYzcMDkIA\nYqN2HHnWHVm9fZyzR8qyf4QKKYYSP6/9LQOeTk5xVyFIWy4FSelN9Oc913+JO5yU\nfkDm5PSMjcddH7CJf2i2r/tlkZ6cFDxV6AQ6hicWgHha+QzO4XllKPN0q+9tJQ1p\nc6Nu91dIk0WO1IfnTqfxq5CYBhX+Hs1oHNIAgl5RV+tlDATEPfcXbaxT6Bv7hbL2\nejhBIf7oe1zZ+AyUpx6GgKZU1ztfJgmRj7+R53ehonm2Ri/uiHRVKHlIk8GXl9eB\njZUEDQECgYEA+Hiyopz+M0/d7Xf04JZ1dA/FRa0iVKsNBEJjL+qcCGz+/xWqhi7A\nKp2v4j/h6UaXaLgEF0L1E0kbulIH1sZsT07XGBMzp5L9g6WrzrN9AVHDwKN+Uost\nk7xo1SvTY7LLhppqUlO4kL1yMcGN50Yj9+nE22ikEr4SIqCsy/QQITkCgYEAw24L\nCRGvpCRT9ftn+C2M1qFqvUt0sN8EUar3VmyWmsT+ZFJq2jfH10PFFg7J5DHUZHXk\nmFUZIso1boMo/D38vmypfRBWxVIfdhZbqryY8wBpJvOmyZioI0s/1QV1j4UeSSIb\njQkzKbS8WyyQ2FmVrFOeDUWDgakIV5fHw0cMcs0CgYEAilZo3rCZtufYn8YRyJj8\ne8nsA4cJfipd7OkpYBw3E1nb/xmI/3w38YIp0sXOeZqb4enSHUFiQYKKtYnGY4XF\n98Hlb7oBIGNuUkWDCmpURs/HNRHR2xMyJPbZRxZHc1Kwjhia6YtDTxKq6Zjh8MnU\nbMryl1YDQ4wffLgIfOU9tcECgYANyF8C3rpyaxV4zahBeoTqRiwO+ZlbN/9H+zTC\nZZohhC8kyCM9DJ4Ncnwd2CEo9NKz2xSqIaZKK9Sk3J8xWvXOQD+b0GEuPWJ2o5EH\nc5Gd4bOIybpDkX6aLp5r2Zy26H6ATeV/htyS3mpCS9xTRc4mfycwbGyf4lnyQ4QV\nI5efKQKBgQDjMzskTYsa2h13gQB+2M9wRwNwVrzUB+kfPmKW9+DKr11pRImZsYdl\noDtzfb0hyMHspNoJCwEvSo3G1vZ21sakQ37qqC8SM/E/dmmV794YHw/hp5fFJHx0\n6PB8xlgpuMBSrPuwK1cdFCw9K/QaX0BBLjPKarqNpXejjpNwTN7/Zg==\n-----END RSA PRIVATE KEY-----\n",
+                        "sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+                        "subaccountid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                        "tenantid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                        "tenantmode": "shared",
+                        "uaadomain": "authentication.us10.hana.ondemand.com",
+                        "url": "https://ca502f84trial.authentication.us10.hana.ondemand.com",
+                        "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqMFhYVuABXnrKUDIl67f\n9jy10ZTDDsBhoH3PZPfDs6yCtRSZwMzX8xGJasPCmLSK2wlK7cER1+uw+j3GKkmU\ngREPhPnRXStteGrqeK5WWLPRRuDYAK+voOULNFEmRWMUKAioGc+MDW0Vxoek8PRz\nw+lsYZNUrPyGzf9M9zFrKdXibsYvUv2LZRsrWBY3CLRZ3c1uMiwKuJmqtg+vEtCt\nN6ar0btukAFBsAdGlugfO0xjBaDY4weVJpP19blEDnYDCzIwu3VpTwD4hO9aDNgC\n5xFtqHYNr3/wYL/VutX2ZZE2ziX/QF5mVarco6NFksG1/ORp+F+SP6Uy18sWby+n\nawIDAQAB\n-----END PUBLIC KEY-----",
+                        "xsappname": "feature-flags-binding-10ffa47f-eef8-46d1-a71e-b0ecdb9a09a8!b123346|feature-flags!b1765",
+                        "zoneid": "802f30c8-f978-47cd-ab99-c208115014bb"
+                    }
+                }
+            }
+        ],
+        "xsuaa": [
+            {
+                "name": "applicatioui-xsuaa-srv",
+                "instance_name": "applicatioui-xsuaa-srv",
+                "label": "xsuaa",
+                "tags": [
+                    "xsuaa",
+                    "endpoint:https://api.cf.us10-001.hana.ondemand.com",
+                    "org:ca502f84trial",
+                    "space:dev"
+                ],
+                "plan": "application",
+                "credentials": {
+                    "apiurl": "https://api.authentication.us10.hana.ondemand.com",
+                    "clientid": "sb-applicatioui!t123346",
+                    "clientsecret": "bdIO3sOoYLkWgyQw5ToH6GpyrmA=",
+                    "credential-type": "instance-secret",
+                    "identityzone": "ca502f84trial",
+                    "identityzoneid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                    "sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+                    "service_key_name": "key",
+                    "subaccountid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                    "tenantid": "802f30c8-f978-47cd-ab99-c208115014bb",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.us10.hana.ondemand.com",
+                    "url": "https://ca502f84trial.authentication.us10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqMFhYVuABXnrKUDIl67f\n9jy10ZTDDsBhoH3PZPfDs6yCtRSZwMzX8xGJasPCmLSK2wlK7cER1+uw+j3GKkmU\ngREPhPnRXStteGrqeK5WWLPRRuDYAK+voOULNFEmRWMUKAioGc+MDW0Vxoek8PRz\nw+lsYZNUrPyGzf9M9zFrKdXibsYvUv2LZRsrWBY3CLRZ3c1uMiwKuJmqtg+vEtCt\nN6ar0btukAFBsAdGlugfO0xjBaDY4weVJpP19blEDnYDCzIwu3VpTwD4hO9aDNgC\n5xFtqHYNr3/wYL/VutX2ZZE2ziX/QF5mVarco6NFksG1/ORp+F+SP6Uy18sWby+n\nawIDAQAB\n-----END PUBLIC KEY-----",
+                    "xsappname": "applicatioui!t123346",
+                    "zoneid": "802f30c8-f978-47cd-ab99-c208115014bb"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+   "overrideStatus": true,
+   "overrideExisting": true,
+   "flags": [
+      {
+         "id": "flag-name-1",
+         "description": "description of flag-name-1",
+         "directShipments": [],
+         "weightedChoices": [],
+         "variations": [
+            "false",
+            "true"
+         ],
+         "offVariationIndex": 0,
+         "variationType": "BOOLEAN",
+         "defaultVariationIndex": 1,
+         "enabled": true
+      }]
+
+}
